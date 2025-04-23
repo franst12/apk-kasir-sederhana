@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { API_URL } from "../assets/apis/Api";
+import Swal from "sweetalert2";
 
 export default function TotalPesanan({ keranjang, setKeranjang }) {
   const [total, setTotal] = useState(0);
@@ -19,6 +20,14 @@ export default function TotalPesanan({ keranjang, setKeranjang }) {
           id: Date.now(),
           keranjang: keranjang,
           total: total,
+        });
+
+        Swal.fire({
+          title: "Berhasil",
+          text: "Membuat Pesanan",
+          timer: 1000,
+          showConfirmButton: false,
+          icon: "success",
         });
 
         await Promise.all(keranjang.map((item) => axios.delete(`${API_URL}keranjangs/${item.id}`)));

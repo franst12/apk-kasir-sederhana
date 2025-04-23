@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { API_URL } from "../assets/apis/Api";
 import TotalPesanan from "./TotalPesanan";
 import KeranjangMenu from "./KeranjangMenu";
+import Swal from "sweetalert2";
 
 export default function KeranjangPesanan({ menuItem }) {
   const [keranjang, setKeranjang] = useState([]);
@@ -12,7 +13,6 @@ export default function KeranjangPesanan({ menuItem }) {
       try {
         const response = await axios.get(`${API_URL}keranjangs`);
         const keranjangs = response.data;
-
         setKeranjang(keranjangs);
       } catch {
         (error) => {
@@ -59,7 +59,15 @@ export default function KeranjangPesanan({ menuItem }) {
 
       axios
         .post(`${API_URL}keranjangs`, newMenuItem)
-        .then((response) => console.log("item Baru ditambahakan", response.data))
+        .then((response) => {
+          Swal.fire({
+            title: "Berhasil!!!",
+            text: "Ditambahkan ke keranjang",
+            timer: 1000,
+            showConfirmButton: false,
+            icon: "success",
+          });
+        })
         .catch((err) => console.log("gagal menambahkan", err));
     }
   }, [menuItem]);

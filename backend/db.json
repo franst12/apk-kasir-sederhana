@@ -196,48 +196,5 @@
     }
   ],
   "keranjangs": [],
-  "pesanan": [
-    {
-      "id": 1745383592841,
-      "keranjang": [
-        {
-          "id": "3",
-          "nama": "Kwe Tiaw Goreng",
-          "harga": 15000,
-          "gambar": "kwetyo.jpg",
-          "category": {
-            "id": 1,
-            "nama": "Makanan"
-          },
-          "qty": 1,
-          "unitPrice": 15000
-        },
-        {
-          "id": "8",
-          "nama": "Es Degan ",
-          "harga": 10000,
-          "gambar": "es-degan.jpg",
-          "category": {
-            "id": 2,
-            "nama": "Minuman"
-          },
-          "qty": 1,
-          "unitPrice": 10000
-        },
-        {
-          "id": "10",
-          "nama": "Saingan Goreng",
-          "harga": 13000,
-          "gambar": "kentang-goreng.jpg",
-          "category": {
-            "id": 3,
-            "nama": "Camilan"
-          },
-          "qty": 1,
-          "unitPrice": 13000
-        }
-      ],
-      "total": 38000
-    }
-  ]
+  "pesanan": []
 }

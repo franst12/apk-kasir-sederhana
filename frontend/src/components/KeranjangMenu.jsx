@@ -1,6 +1,7 @@
 import React from "react";
 import { API_URL } from "../assets/apis/Api";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 export default function KeranjangMenu({ item, gambar, setKeranjang, keranjang }) {
   const handleEditPesanan = (itemId, qty) => {
@@ -33,7 +34,9 @@ export default function KeranjangMenu({ item, gambar, setKeranjang, keranjang })
 
     axios
       .delete(`${API_URL}keranjangs/${itemId}`)
-      .then((res) => item.id === itemId && setKeranjang(updateKeranjang))
+      .then((res) => {
+        item.id === itemId && setKeranjang(updateKeranjang);
+      })
       .catch((err) => console.log("gagal menghapus", err));
   };
 
