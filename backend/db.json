@@ -1,0 +1,243 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "nama": "Makanan"
+    },
+    {
+      "id": "2",
+      "nama": "Minuman"
+    },
+    {
+      "id": "3",
+      "nama": "Camilan"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "kode": "P01",
+      "nama": "Nasi Goreng",
+      "stok": true,
+      "gambar": "nasi-goreng.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      },
+      "harga": 15000
+    },
+    {
+      "id": "2",
+      "kode": "P02",
+      "nama": "Chicken SmackDown",
+      "stok": true,
+      "gambar": "ayam-geprek.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      },
+      "harga": 25000
+    },
+    {
+      "id": "3",
+      "kode": "P03",
+      "nama": "Kwe Tiaw Goreng",
+      "stok": true,
+      "gambar": "kwetyo.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      },
+      "harga": 15000
+    },
+    {
+      "id": "4",
+      "kode": "P04",
+      "nama": "Mie Goreng",
+      "stok": true,
+      "gambar": "mie-goreng.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      },
+      "harga": 17000
+    },
+    {
+      "id": "5",
+      "kode": "P05",
+      "nama": "Pecel Lele",
+      "stok": true,
+      "gambar": "pecel-lele.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      },
+      "harga": 20000
+    },
+    {
+      "id": "6",
+      "kode": "P06",
+      "nama": "Es Teh",
+      "stok": true,
+      "gambar": "es-teh.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Minuman"
+      },
+      "harga": 5000
+    },
+    {
+      "id": "7",
+      "kode": "P07",
+      "nama": "Es Jeruk",
+      "stok": true,
+      "gambar": "es-jeruk.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Minuman"
+      },
+      "harga": 5000
+    },
+    {
+      "id": "8",
+      "kode": "P08",
+      "nama": "Es Degan ",
+      "stok": true,
+      "gambar": "es-degan.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Minuman"
+      },
+      "harga": 10000
+    },
+    {
+      "id": "9",
+      "kode": "P09",
+      "nama": "Es Kuwut",
+      "stok": true,
+      "gambar": "es-kuwut.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Minuman"
+      },
+      "harga": 8000
+    },
+    {
+      "id": "10",
+      "kode": "P010",
+      "nama": "Saingan Goreng",
+      "stok": true,
+      "gambar": "kentang-goreng.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Camilan"
+      },
+      "harga": 13000
+    },
+    {
+      "id": "11",
+      "kode": "P011",
+      "nama": "Budin Goreng",
+      "stok": true,
+      "gambar": "budin-goreng.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Camilan"
+      },
+      "harga": 10000
+    },
+    {
+      "id": "12",
+      "kode": "P012",
+      "nama": "Gedang Goreng",
+      "stok": true,
+      "gambar": "gedang-goreng.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Camilan"
+      },
+      "harga": 10000
+    },
+    {
+      "id": "13",
+      "kode": "P013",
+      "nama": "Tahu Crispy",
+      "stok": true,
+      "gambar": "tahu-crispy.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Camilan"
+      },
+      "harga": 10000
+    },
+    {
+      "id": "14",
+      "kode": "P014",
+      "nama": "Cireng",
+      "stok": true,
+      "gambar": "cireng.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Camilan"
+      },
+      "harga": 13000
+    },
+    {
+      "id": "15",
+      "kode": "P015",
+      "nama": "Mendoan",
+      "stok": true,
+      "gambar": "mendoan.jpeg",
+      "category": {
+        "id": 3,
+        "nama": "Camilan"
+      },
+      "harga": 13000
+    }
+  ],
+  "keranjangs": [],
+  "pesanan": [
+    {
+      "id": 1745383592841,
+      "keranjang": [
+        {
+          "id": "3",
+          "nama": "Kwe Tiaw Goreng",
+          "harga": 15000,
+          "gambar": "kwetyo.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          },
+          "qty": 1,
+          "unitPrice": 15000
+        },
+        {
+          "id": "8",
+          "nama": "Es Degan ",
+          "harga": 10000,
+          "gambar": "es-degan.jpg",
+          "category": {
+            "id": 2,
+            "nama": "Minuman"
+          },
+          "qty": 1,
+          "unitPrice": 10000
+        },
+        {
+          "id": "10",
+          "nama": "Saingan Goreng",
+          "harga": 13000,
+          "gambar": "kentang-goreng.jpg",
+          "category": {
+            "id": 3,
+            "nama": "Camilan"
+          },
+          "qty": 1,
+          "unitPrice": 13000
+        }
+      ],
+      "total": 38000
+    }
+  ]
+}
