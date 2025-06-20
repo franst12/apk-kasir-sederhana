@@ -195,6 +195,12 @@
       "harga": 13000
     }
   ],
-  "keranjangs": [],
+  "keranjangs": [
+    {
+      "qty": 3,
+      "harga": 45000,
+      "id": "1"
+    }
+  ],
   "pesanan": []
 }
